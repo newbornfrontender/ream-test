@@ -1,0 +1,9 @@
+{
+  "name": "ream-test",
+  "version": "1.0.0",
+  "description": "Тестовый проект на Ream",
+  "repository": "https://github.com/newbornfrontender/ream-test.git",
+  "author": "Infant Frontender <newbornfrontender@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
