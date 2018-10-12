@@ -1,18 +1,7 @@
-import Vue from 'vue';
-import Router from 'vue-router';
+import createRouter from './router';
+import ErrorPage from './pages/Error.vue';
 
-Vue.use(Router);
-
-export default () => {
-  const router = new Router({
-    mode: 'history',
-    routes: [{
-      path: '/',
-      component: () => import('./pages/Index.vue'),
-    }],
-  });
-
-  return {
-    router,
-  };
-};
+export default () => { return {
+  router: createRouter(),
+  error: ErrorPage,
+}};
