@@ -6,6 +6,11 @@
   "author": "Infant Frontender <newbornfrontender@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "ream start",
+    "dev": "ream dev",
+    "build": "ream build"
+  },
   "devDependencies": {
     "ream": "^3.3.4"
   }
