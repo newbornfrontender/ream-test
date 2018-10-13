@@ -1,43 +1,22 @@
 <script>
-  import ItemsList from './components/ItemsList.vue';
+  import NavList from './components/NavList.vue';
 
   export default {
     name: 'Root',
 
     components: {
-      ItemsList,
+      NavList,
     },
-
-    data: () => ({
-      items: [{
-        name: 'First',
-      }],
-    }),
   };
 </script>
 
 <template>
   <section>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <router-link to="/">Home</router-link>
-          </li>
-
-          <li>
-            <router-link to="/about">About</router-link>
-          </li>
-        </ul>
-      </nav>
+      <NavList />
     </header>
 
     <main>
-      <ItemsList
-        :tag="'ul'"
-        :items="items"
-      />
-
       <router-view />
     </main>
   </section>

@@ -22,7 +22,13 @@
 
     render (createElement) {
       return createElement(this.tag, this.items.map(item => {
-        return createElement('li', item.name);
+        return createElement('li', [
+          createElement('router-link', {
+            attrs: {
+              to: item.path,
+            },
+          }, item.text),
+        ]);
       }));
     },
   };
