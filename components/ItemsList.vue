@@ -1,5 +1,7 @@
 <script>
   export default {
+    name: 'ItemsList',
+
     props: {
       tag: {
         type: String,
