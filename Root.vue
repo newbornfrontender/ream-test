@@ -1,6 +1,18 @@
 <script>
+  import ItemsList from './components/ItemsList.vue';
+
   export default {
     name: 'Root',
+
+    components: {
+      ItemsList,
+    },
+
+    data: () => ({
+      items: [{
+        name: 'First',
+      }],
+    }),
   };
 </script>
 
@@ -21,6 +33,11 @@
     </header>
 
     <main>
+      <ItemsList
+        :tag="'ul'"
+        :items="items"
+      />
+
       <router-view />
     </main>
   </section>
