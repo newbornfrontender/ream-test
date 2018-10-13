@@ -21,7 +21,7 @@
     },
 
     render (createElement) {
-      return createElement(this.tag, this.items.map(function (item) {
+      return createElement(this.tag, this.items.map(item => {
         return createElement('li', item.name);
       }));
     },
