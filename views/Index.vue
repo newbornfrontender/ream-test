@@ -18,5 +18,12 @@
 </script>
 
 <template>
-  <h1>Home</h1>
+  <h1 :class="$style.title">{{ title }}</h1>
 </template>
+
+<style module>
+  .title {
+    color: blue;
+  }
+</style>
+
